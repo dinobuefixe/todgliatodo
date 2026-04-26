@@ -14,3 +14,7 @@ if (theme === "dark-mode") {
     document.body.classList.add("dark-mode");
 }
 
+function clearStorage(){
+    localStorage.clear();
+    window.location.reload();
+}

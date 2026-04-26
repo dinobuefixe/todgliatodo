@@ -28,14 +28,17 @@ function createTask(){
     button.addEventListener("click", addTask);
 }
 
-
 function addTask(){
 
     let date = new Date();
+    let hours = date.getHours()
     let day = date.getDate();
     let month = date.getMonth();
     let year = date.getYear();
-    let dateFinal= day + "/" + month + "/" +year;
+
+    year = year.toString().slice(1);
+
+    let dateFinal= hours + "h - " + day + "/" + month + "/" + year;
 
     const text = document.getElementById('text').value;
     const title = document.getElementById('title').value;
@@ -50,12 +53,10 @@ function addTask(){
         });
 
     localStorage.setItem("tasks", JSON.stringify(tasks));
-    console.log("SIGMA");
     } catch (error) {
         console.error("Erro ao adicionar tarefa:", error);
     }
 
-    console.log("Sucesso");
 }
 
 

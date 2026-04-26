@@ -9,11 +9,20 @@
 <body>
     <main>
         <h1>Togliatoddo</h1>
-        <button onclick="changeMode()">mudar cor</button>
-        <button onclick="createTask()" id="createTask">adicionar task</button>
+        <img id="logo" src="https://static.vecteezy.com/system/resources/previews/053/577/746/non_2x/golden-tagliatelle-pasta-italian-food-free-png.png">
+        <div class="options-container">
+            <button onclick="changeMode()" class="options">Dark/Light Mode</button>
+            <button onclick="createTask()" id="createTask" class="options">Adicionar Tarefa</button>
+            <button onclick="clearStorage()" class="options">Limpar Tudo</button>
+        </div>
+
+
         <div id="taskForm"></div>
 
         <div id="listings"></div>
+        <br>
+        <div id="finishedListings"></div>
+
     </main>
 
     <script src="index.js"></script>
@@ -22,3 +31,4 @@
     <script src="buttons.js"></script>
 </body>
 </html>
+
