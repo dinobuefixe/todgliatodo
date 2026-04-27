@@ -1,11 +1,10 @@
-function changeMode(){
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    let mode = localStorage.getItem("theme");
-    if(mode === "light-mode"){
-        localStorage.setItem("theme","dark-mode")
-    }else{
-        localStorage.setItem("theme","light-mode")
+function changeMode() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark-mode");
+    } else {
+        localStorage.setItem("theme", "light-mode");
     }
 }
 

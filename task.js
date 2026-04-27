@@ -26,6 +26,8 @@ function createTask(){
     addTaskButton.remove();
 
     button.addEventListener("click", addTask);
+
+    
 }
 
 function addTask(){
