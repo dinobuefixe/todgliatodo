@@ -32,13 +32,14 @@ function addTask(){
 
     let date = new Date();
     let hours = date.getHours()
+    let minutes = date.getMinutes();
     let day = date.getDate();
     let month = date.getMonth();
     let year = date.getYear();
 
     year = year.toString().slice(1);
 
-    let dateFinal= hours + "h - " + day + "/" + month + "/" + year;
+    let dateFinal= hours + ":" + minutes + " - " + day + "/" + month + "/" + year;
 
     const text = document.getElementById('text').value;
     const title = document.getElementById('title').value;
