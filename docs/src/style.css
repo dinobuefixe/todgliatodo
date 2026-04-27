@@ -9,70 +9,77 @@ html, body {
     align-items: center;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
+    color: #222;
 }
 
 main {
-    width: 750px;
-    margin-top: 40px;
-    padding: 20px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 92%;
+    max-width: 600px;
+    margin-top: 3%;
+    padding: 3%;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
 }
 
-#logo{
-    height: 100px;
+#logo {
+    height: 9vh;
     width: auto;
-    margin-top: -300px;
-    margin-left: 650px;
+    margin: 0;
+    margin-top: -12vh;
+    margin-left: 55%;
 }
+
 .dark-mode {
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     color: white;
 }
 
 .dark-mode main {
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 4px 18px rgba(255,255,255,0.12);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 3%;
     border-radius: 10px;
     overflow: hidden;
 }
 
 th, td {
-    padding: 12px 10px;
+    padding: 8px 6px;
     text-align: left;
     border-bottom: 1px solid #e0e0e0;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 0.9rem;
 }
 
 th {
-    background: #fafafa;
-    font-weight: 600;
+    background: #f2f2f2;
+    font-weight: 700;
 }
 
 td {
-    background: #fff;
+    background: #ffffff;
 }
 
-.icon{
-    height: 25px;
-    width: 25px;
+.icon {
+    height: 22px;
+    width: 22px;
     pointer-events: none;
 }
 
 .dark-mode th {
-    background: #222;
+    background: #1f1f1f;
 }
 
 .dark-mode td {
-    background: #333;
+    background: #2a2a2a;
     color: white;
 }
 
@@ -96,47 +103,59 @@ td {
 button {
     padding: 6px 12px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
-    transition: 0.2s;
-    font-weight: bold;
+    font-size: 0.85rem;
+    font-weight: 700;
     font-family: DM Sans;
-}
-
-.dark-mode button{
-    background-color: #690000;
-    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    color: #222;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.15s ease, background 0.2s ease;
 }
 
 button:hover {
-    transform: scale(1.10);
+    transform: scale(1.03);
+    background: #f0f0f0;
 }
 
 .dark-mode button {
-    opacity: 0.9;
+    background-color: #7a0000;
+    color: #ffffff;
+}
+
+.dark-mode button:hover {
+    background-color: #8b0000;
+}
+
+input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: DM Sans;
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.dark-mode input {
+    background: #222;
+    color: white;
 }
 
 .options-container {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    flex-direction: column;
+    gap: 8px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 3%;
 }
 
 .options {
-    padding: 10px 15px;
-}
-
-input{
-    padding: 6px 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.2s;
-    font-weight: bold;
-    font-family: DM Sans;
-    margin-right:25px ;
+    padding: 2% 3%;
 }
